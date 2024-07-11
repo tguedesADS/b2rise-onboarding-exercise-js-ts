@@ -13,7 +13,8 @@ const result = calc(30, 20)
 
 console.log(result)
 
-// 3. Crie uma interface que descreva um objeto com propriedades de diferentes tipos básicos (string, number, boolean). Em seguida, escreva uma função que receba esse objeto e imprima suas propriedades no console.
+// 3. Crie uma interface que descreva um objeto com propriedades de diferentes tipos básicos (string, number, boolean). Em seguida,
+// escreva uma função que receba esse objeto e imprima suas propriedades no console.
 
 interface MyObject {
   name: string;
