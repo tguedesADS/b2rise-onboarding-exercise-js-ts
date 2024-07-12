@@ -16,16 +16,6 @@ export class Pessoa {
 const pessoa1 = new Pessoa('thalia', 27)
 console.log(pessoa1.saudacao())
 
-export class Pessoa {
-  constructor(public nome: string, public idade: number) { }
-
-  public saudacao(): string {
-    return `Olá, eu sou ${this.nome} e tenho ${this.idade} anos.`
-  }
-}
-const pessoa1 = new Pessoa('thalia', 27)
-console.log(pessoa1.saudacao())
-
 // 2. Implemente uma interface `Animal` com métodos `emitirSom` e `mover`. Crie uma classe `Cachorro` que implemente essa interface.
 
 interface Animal {
