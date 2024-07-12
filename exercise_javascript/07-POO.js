@@ -23,10 +23,14 @@ class Animal {
         this.type = type;
         this.sound = sound;
     }
+    static species(){
+      return 'This is an animal species ';
+    }
 }
 
-let dog = new Animal('Dog', 'Auau');
+const dog = new Animal('Dog', 'Auau');
 console.log(`Type: ${dog.type}, Sound: ${dog.sound}`);
+console.log(Animal.species());
 
 // 5. Crie uma classe `Car` com as propriedades `make` e `model`, e um método `drive`. Crie uma instância e chame o método.
 
@@ -41,7 +45,7 @@ class Car {
     }
 }
 
-let myCar = new Car('Fiat', 'Corolla');
+const myCar = new Car('Fiat', 'Corolla');
 myCar.drive();
 
 // 6. Estenda a classe `Person` para criar uma classe `Student` com uma propriedade adicional `grade`. Crie uma instância e registre-a.
@@ -77,13 +81,13 @@ class Person {
 }
 
 const personA = new Person('John');
-console.log(person.name);
+console.log(personA.name);
 
 personA.name = 'Maria';
-console.log(person.name);
+console.log(personA.name);
 
 try {
-  person.name = '';
+  personA.name = '';
 } catch (error) {
   console.error(error);
 }
@@ -156,7 +160,8 @@ try {
   console.error(error);
 }
 
-// 10. Crie uma classe `Employee` com as propriedades `name` e `salary`, e um método `raiseSalary`. Estenda-a para criar uma classe `Manager` com uma propriedade adicional `department`. Demonstre o uso de ambas as classes.
+// 10. Crie uma classe `Employee` com as propriedades `name` e `salary`, e um método `raiseSalary`.
+// Estenda-a para criar uma classe `Manager` com uma propriedade adicional `department`. Demonstre o uso de ambas as classes.
 
 class Employee {
   constructor(name, salary) {

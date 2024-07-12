@@ -3,8 +3,6 @@
 // 3. Acesse uma propriedade de um literal de objeto usando notação de colchetes e registre-a.
 // 4. Adicione uma nova propriedade a um literal de objeto existente e registre o objeto atualizado.
 
-const { ifError } = require("assert");
-
 const person = {
     name: 'Maria',
     age: 25,
