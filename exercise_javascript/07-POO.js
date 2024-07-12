@@ -1,5 +1,20 @@
 // 1. Crie uma classe `Person` com as propriedades `name` e `age`. Crie uma instância e registre-a.
 // 2. Adicione um método `greet` à classe `Person` que registre uma mensagem de saudação. Chame o método em uma instância.
+
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    greet() {
+        console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+    }
+}
+
+const person1 = new Person('thalia', 27);
+console.log(person1)
+console.log(person1.greet());
+
 // 3. Crie uma classe `Animal` com um construtor que inicialize `type` e `sound`. Crie uma instância e registre-a.
 // 4. Adicione um método estático `species` à classe `Animal` que registre uma mensagem. Chame o método.
 // 5. Crie uma classe `Car` com as propriedades `make` e `model`, e um método `drive`. Crie uma instância e chame o método.
