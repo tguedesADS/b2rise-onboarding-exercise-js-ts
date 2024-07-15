@@ -58,9 +58,9 @@ export class Veiculo {
 
 class Carro extends Veiculo {
   constructor(
-    readonly marca: string,
-    readonly modelo: string,
-    readonly ano: number,
+    marca: string,
+    modelo: string,
+    ano: number,
     readonly numeroPortas: number,
     readonly combustivel: string
   ) { super(marca, modelo, ano) }
@@ -76,9 +76,9 @@ class Carro extends Veiculo {
 
 class Moto extends Veiculo {
   constructor(
-    readonly marca: string,
-    readonly modelo: string,
-    readonly ano: number,
+    marca: string,
+    modelo: string,
+    ano: number,
     readonly cilindrada: number,
   ) { super(marca, modelo, ano) }
 
