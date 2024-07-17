@@ -1,3 +1,3 @@
-export default interface MetodoPagamento{
-  pagar(v: number): void;
+export interface MetodoPagamento{
+  pagar(quantia: number): void;
 }
